@@ -1,0 +1,47 @@
+Attempting to connect to MongoDB...
+Using MONGO_URI: mongodb+srv://guest:81cYP...
+(node:32933) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32933) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Express server running on http://localhost:8080
+MongoDB Connected Successfully
+Data collection service started
+Manually run data collection once...
+Database has 126707 hourly measurements
+Historical data is sufficient, no need to generate test data
+Stations already exist, skipping initialization
+Received request: { timestamp: '2025-05-01T12:00:00Z' }
+query time: 2025-05-01T12:00:00.000Z
+========== performance test start ==========
+--- original multiple query method performance test ---
+get 403 station basic information, time cost: 278ms
+get 2821 sensor information, time cost: 1036ms
+get 1024 hourly data, time cost: 222ms
+original method time cost: 1258ms
+--- original method test end ---
+--- optimized aggregation query method test ---
+start to execute the optimized aggregation query...
+aggregation query completed, time cost: 541ms
+get 403 station data
+data transformation completed, time cost: 2ms
+optimized method time cost: 1802ms
+--- optimized method test end ---
+========== performance test end ==========
+Received request: { timestamp: '2025-05-02T12:00:00Z' }
+query time: 2025-05-02T12:00:00.000Z
+========== performance test start ==========
+--- original multiple query method performance test ---
+get 403 station basic information, time cost: 276ms
+get 2821 sensor information, time cost: 969ms
+get 1024 hourly data, time cost: 282ms
+original method time cost: 1252ms
+--- original method test end ---
+--- optimized aggregation query method test ---
+start to execute the optimized aggregation query...
+aggregation query completed, time cost: 651ms
+get 403 station data
+data transformation completed, time cost: 2ms
+optimized method time cost: 1905ms
+--- optimized method test end ---
+========== performance test end ==========
+Manually data collection completed

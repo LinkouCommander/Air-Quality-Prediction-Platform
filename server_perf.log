@@ -1,0 +1,80 @@
+Attempting to connect to MongoDB...
+Using MONGO_URI: mongodb+srv://guest:81cYP...
+(node:24319) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24319) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Express server running on http://localhost:8080
+MongoDB Connected Successfully
+Data collection service started
+Manually run data collection once...
+Database has 125778 hourly measurements
+Historical data is sufficient, no need to generate test data
+Stations already exist, skipping initialization
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T12:00:00Z' }
+查询时间: 2025-05-01T12:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 273ms
+获取了2821个传感器信息，耗时: 1032ms
+获取了1024条小时数据，耗时: 217ms
+原始方法总耗时: 1249ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 558ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 3ms
+优化方法总耗时: 1810ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T12:00:00Z' }
+查询时间: 2025-05-01T12:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 271ms
+获取了2821个传感器信息，耗时: 951ms
+获取了1024条小时数据，耗时: 222ms
+原始方法总耗时: 1173ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 550ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1727ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T12:00:00Z' }
+查询时间: 2025-05-01T12:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 270ms
+获取了2821个传感器信息，耗时: 882ms
+获取了1024条小时数据，耗时: 230ms
+原始方法总耗时: 1112ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 550ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1666ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T12:00:00Z' }
+查询时间: 2025-05-01T12:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 285ms
+获取了2821个传感器信息，耗时: 858ms
+获取了1024条小时数据，耗时: 217ms
+原始方法总耗时: 1075ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 549ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 1ms
+优化方法总耗时: 1625ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========

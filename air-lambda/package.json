@@ -1,0 +1,22 @@
+{
+  "name": "air-quality-collect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "zip -r lambda.zip index.js la-hourly-sync.js node_modules",
+    "generate-data": "node generateHistoricalData.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Lambda function for collecting air quality data",
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.799.0",
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^7.0.3",
+    "node-fetch": "^2.7.0"
+  }
+}

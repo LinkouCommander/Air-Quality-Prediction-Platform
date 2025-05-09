@@ -1,0 +1,14 @@
+{
+  "name": "air-data-generator",
+  "version": "1.0.0",
+  "description": "生成空气质量历史数据的脚本",
+  "main": "generateHistoricalData.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node generateHistoricalData.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.3"
+  }
+} 

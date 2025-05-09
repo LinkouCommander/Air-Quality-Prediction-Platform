@@ -1,0 +1,562 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #c62828;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.error-message a {
+  color: #721c24;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.controls-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.map-info {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+.parameter-select {
+  min-width: 200px;
+  margin-right: 10px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 添加半径选择器样式 */
+.radius-picker {
+  width: 70px;
+  padding: 6px 8px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.control-row label {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.active-button {
+  background-color: #f56565;
+  color: white;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+button:hover {
+  background-color: #3182ce;
+}
+
+.helper-text {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 半径标签样式 */
+.radius-label {
+  background-color: rgb(0, 100, 255);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  pointer-events: none; /* 防止标签拦截鼠标事件 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 半径指示线 */
+.radius-label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background-color: rgb(0, 100, 255);
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 添加区域加载状态样式 */
+.area-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+/* 预测结果面板 */
+.prediction-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+.time-badge {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background-color: #2563eb;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+}
+
+.time-icon {
+  margin-right: 6px;
+}
+
+.time-text {
+  font-weight: 500;
+}
+
+.loading-prediction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.prediction-error {
+  padding: 10px;
+  border-left: 4px solid #ef4444;
+  background-color: #fee2e2;
+}
+
+.prediction-error h3 {
+  color: #b91c1c;
+}
+
+.prediction-note {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.station-info {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.air-quality-value {
+  margin: 16px 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.air-quality-value.good {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.air-quality-value.moderate {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.air-quality-value.unhealthy {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.air-quality-value.very-unhealthy {
+  background-color: #ddd6fe;
+  color: #5b21b6;
+}
+
+.air-quality-value.hazardous {
+  background-color: #fecaca;
+  color: #7f1d1d;
+}
+
+.air-quality-value .value {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.air-quality-value .unit {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.quality-description {
+  text-align: center;
+  font-weight: 500;
+}
+
+.close-prediction {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.close-prediction:hover {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.quality-indicator {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.quality-level {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.good {
+  background-color: #4ade80;
+  color: #064e3b;
+}
+
+.moderate {
+  background-color: #fbbf24;
+  color: #78350f;
+}
+
+.unhealthy-sensitive {
+  background-color: #fb923c;
+  color: #7c2d12;
+}
+
+.unhealthy {
+  background-color: #f87171;
+  color: #7f1d1d;
+}
+
+.very-unhealthy {
+  background-color: #c084fc;
+  color: #581c87;
+}
+
+.hazardous {
+  background-color: #ef4444;
+  color: #450a0a;
+}
+
+.close-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.close-button:hover {
+  background-color: #3182ce;
+}
+
+.time-picker {
+  width: 250px;
+  padding: 8px;
+  border: 2px solid #3b82f6;
+  border-radius: 4px;
+  background-color: #f0f9ff;
+  font-size: 1rem;
+}
+
+.time-label {
+  font-weight: bold;
+  color: #1e40af;
+  margin-right: 8px;
+  min-width: 80px;
+}
+
+.time-hint {
+  color: #4b5563;
+  font-size: 0.85rem;
+  margin-left: 8px;
+  background-color: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border-left: 3px solid #3b82f6;
+}
+
+/* 添加监测站点相关的样式 */
+.station-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.station-marker:hover {
+  transform: scale(2.5);
+  z-index: 100;
+  box-shadow: 0 0 8px rgba(0,0,0,0.9);
+}
+
+.station-count {
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.active-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* 空气质量等级样式 */
+.quality-good {
+  color: #00E400;
+}
+
+.quality-moderate {
+  color: #FFFF00;
+}
+
+.quality-unhealthy-sensitive {
+  color: #FF7E00;
+}
+
+.quality-unhealthy {
+  color: #FF0000;
+}
+
+.quality-very-unhealthy {
+  color: #99004C;
+}
+
+.quality-hazardous {
+  color: #7E0023;
+}
+
+/* 优化弹出窗口样式 */
+.mapboxgl-popup-content {
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+.popup-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.popup-value {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.popup-quality {
+  font-weight: bold;
+  margin: 5px 0;
+  padding: 3px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.popup-footer {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #888;
+}
+
+/* 控制按钮样式 */
+.control-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.control-buttons button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.control-buttons button:hover {
+  background-color: #e8e8e8;
+}
+
+.control-buttons button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #388E3C;
+}
+
+/* 站点图例样式 */
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 10;
+  font-size: 12px;
+}
+
+.legend-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.legend-label {
+  font-size: 11px;
+}
+
+/* 预测加载状态 */
+.loading-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.loading-message .spinner {
+  margin-bottom: 10px;
+}
+
+/* 优化提示信息 */
+.note-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+  margin: 10px 0;
+  font-size: 14px;
+} 

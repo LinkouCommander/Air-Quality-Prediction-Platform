@@ -1,0 +1,2761 @@
+Attempting to connect to MongoDB...
+Using MONGO_URI: mongodb+srv://guest:81cYP...
+(node:96912) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:96912) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+Express server running on http://localhost:8080
+MongoDB Connected Successfully
+Data collection service started
+Manually run data collection once...
+Database has 121405 hourly measurements
+Historical data is sufficient, no need to generate test data
+Stations already exist, skipping initialization
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T12:00:00Z' }
+查询时间: 2025-05-01T12:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 277ms
+获取了2821个传感器信息，耗时: 1016ms
+获取了1024条小时数据，耗时: 220ms
+原始方法总耗时: 1236ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 564ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 5ms
+优化方法总耗时: 1805ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T20:00:00.000Z' }
+查询时间: 2025-05-02T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 275ms
+获取了2821个传感器信息，耗时: 891ms
+获取了1024条小时数据，耗时: 309ms
+原始方法总耗时: 1201ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 694ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 6ms
+优化方法总耗时: 1901ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T20:00:00.000Z' }
+查询时间: 2025-05-01T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 210ms
+获取了2821个传感器信息，耗时: 808ms
+获取了1024条小时数据，耗时: 238ms
+原始方法总耗时: 1047ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 587ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1638ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Manually data collection completed
+接收到时间查询站点数据请求: { timestamp: '2025-05-03T20:00:00.000Z' }
+查询时间: 2025-05-03T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 680ms
+获取了2821个传感器信息，耗时: 1546ms
+获取了2862条小时数据，耗时: 574ms
+原始方法总耗时: 2120ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 1013ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 6ms
+优化方法总耗时: 3140ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T20:00:00.000Z' }
+查询时间: 2025-05-02T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 277ms
+获取了2821个传感器信息，耗时: 902ms
+获取了1024条小时数据，耗时: 306ms
+原始方法总耗时: 1208ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 686ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 1ms
+优化方法总耗时: 1895ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T20:00:00.000Z' }
+查询时间: 2025-05-01T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 299ms
+获取了2821个传感器信息，耗时: 948ms
+获取了1024条小时数据，耗时: 240ms
+原始方法总耗时: 1188ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 590ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1783ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T20:00:00.000Z' }
+查询时间: 2025-05-02T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 151ms
+获取了2821个传感器信息，耗时: 737ms
+获取了1024条小时数据，耗时: 304ms
+原始方法总耗时: 1041ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 698ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1743ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-03T20:00:00.000Z' }
+查询时间: 2025-05-03T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 283ms
+获取了2821个传感器信息，耗时: 942ms
+获取了2862条小时数据，耗时: 560ms
+原始方法总耗时: 1502ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 1014ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 2520ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T20:00:00.000Z' }
+查询时间: 2025-05-02T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 287ms
+获取了2821个传感器信息，耗时: 936ms
+获取了1024条小时数据，耗时: 307ms
+原始方法总耗时: 1244ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 691ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1939ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T20:00:00.000Z' }
+查询时间: 2025-05-01T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 153ms
+获取了2821个传感器信息，耗时: 715ms
+获取了1024条小时数据，耗时: 247ms
+原始方法总耗时: 962ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 589ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1555ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Received prediction request: {
+  latitude: 34.120031329122455,
+  longitude: -118.30322175177318,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(34.120031329122455, -118.30322175177318), parameter:pm25, radius:10km
+Calling prediction function: latitude=34.120031329122455, longitude=-118.30322175177318, radius=10km
+Start predicting the pm25 value in the area within 10 km of (34.120031329122455, -118.30322175177318)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 51 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 11 stations within 5 km
+Found 11 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 11 stations
+The station Atwater ES (2233) has a pm25 sensor, checking data...
+Found the data of the station Atwater ES (2233): 12.1, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Valley View ES (7397) has a pm25 sensor, checking data...
+Found the data of the station Valley View ES (7397): 207.13, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Glenfeliz Blvd ES (4164) has a pm25 sensor, checking data...
+Found the data of the station Glenfeliz Blvd ES (4164): 259.37, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Van Ness ES (7425) has a pm25 sensor, checking data...
+Found the data of the station Van Ness ES (7425): 60.92, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Le Conte MS (8226) has a pm25 sensor, checking data...
+Found the data of the station Le Conte MS (8226): 105.42, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Micheltorena ES (5288) has a pm25 sensor, checking data...
+Found the data of the station Micheltorena ES (5288): 197.59, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Los Feliz ES (4986) has a pm25 sensor, checking data...
+Found the data of the station Los Feliz ES (4986): 33.42, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Hollywood HS (8693) has a pm25 sensor, checking data...
+Found the data of the station Hollywood HS (8693): 78.96, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Cielo Way has a pm25 sensor, checking data...
+Found the data of the station Cielo Way: 81.25, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Los Feliz, Los Angeles has a pm25 sensor, checking data...
+Found the data of the station Los Feliz, Los Angeles: 13.87, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Selma has a pm25 sensor, checking data...
+Found the data of the station Selma: 243.77, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 11 valid data from stations
+IDW prediction value: 113.77
+IDW(p=2) prediction value: 107.66
+Simple average value: 117.62
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 117.62,
+  stations: 'Atwater ES (2233), Valley View ES (7397), Glenfeliz Blvd ES (4164), Van Ness ES (7425), Le Conte MS (8226), Micheltorena ES (5288), Los Feliz ES (4986), Hollywood HS (8693), Cielo Way, Los Feliz, Los Angeles, Selma',
+  unit: 'µg/m³',
+  stationCount: 11,
+  note: 'Based on the simple average of the surrounding stations, using data from 11 stations'
+}
+Received prediction request: {
+  latitude: 33.964509072686866,
+  longitude: -118.07508650519071,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.964509072686866, -118.07508650519071), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.964509072686866, longitude=-118.07508650519071, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.964509072686866, -118.07508650519071)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 4 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 0 stations within 5 km
+No stations within 5 km, cannot predict
+Prediction result: { success: false, error: '5公里范围内没有可用监测站，无法准确预测空气质量' }
+Received prediction request: {
+  latitude: 33.91542065312015,
+  longitude: -118.0875432525958,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.91542065312015, -118.0875432525958), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.91542065312015, longitude=-118.0875432525958, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.91542065312015, -118.0875432525958)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 10 km
+No stations found, expanding to 20 km and trying again
+Found 80 stations within 20 km, using the nearest station
+Using the nearest station Bryson ES (2589), distance 10.22 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 44.59918168328663,
+  station: 'Bryson ES (2589)',
+  distance: '10.22',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T20:52:42.488Z,
+  note: 'Predicted based on data from the station 10.22 km away'
+}
+Received prediction request: {
+  latitude: 33.97225728807608,
+  longitude: -118.07612456747441,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.97225728807608, -118.07612456747441), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.97225728807608, longitude=-118.07612456747441, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.97225728807608, -118.07612456747441)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 5 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 2 stations within 5 km
+Found 2 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 2 stations
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 9.119894130307857
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 32.363179627205064
+Collected 2 valid data from stations
+IDW prediction value: 21.39
+IDW(p=2) prediction value: 22.03
+Simple average value: 20.74
+Prediction result: {
+  success: true,
+  method: 'idw_basic',
+  value: 21.39,
+  stations: 'Pico Rivera, Pico Rivera',
+  unit: 'µg/m³',
+  stationCount: 2,
+  note: 'Based on Inverse Distance Weighting (IDW), using data from 2 stations'
+}
+Received prediction request: {
+  latitude: 33.986890879856176,
+  longitude: -117.99204152249169,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.986890879856176, -117.99204152249169), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.986890879856176, longitude=-117.99204152249169, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.986890879856176, -117.99204152249169)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 4 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 0 stations within 5 km
+No stations within 5 km, cannot predict
+Prediction result: { success: false, error: '5公里范围内没有可用监测站，无法准确预测空气质量' }
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T20:00:00.000Z' }
+查询时间: 2025-05-02T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 149ms
+获取了2821个传感器信息，耗时: 706ms
+获取了1024条小时数据，耗时: 308ms
+原始方法总耗时: 1014ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 704ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1723ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T20:00:00.000Z' }
+查询时间: 2025-05-01T20:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 156ms
+获取了2821个传感器信息，耗时: 739ms
+获取了1024条小时数据，耗时: 245ms
+原始方法总耗时: 984ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 584ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 2ms
+优化方法总耗时: 1570ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Received prediction request: {
+  latitude: 33.96767554934516,
+  longitude: -118.14344975585878,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.96767554934516, -118.14344975585878), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.96767554934516, longitude=-118.14344975585878, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.96767554934516, -118.14344975585878)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 33 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 4 stations within 5 km
+Found 4 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 4 stations
+The station 3548 - Elizabeth Learning Ctr has a pm25 sensor, checking data...
+Found the data of the station 3548 - Elizabeth Learning Ctr: 283.09, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Elizabeth Learning Ctr (3548) has a pm25 sensor, checking data...
+Found the data of the station Elizabeth Learning Ctr (3548): 190.93, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES (2381) has a pm25 sensor, checking data...
+Found the data of the station Maywood ES (2381): 1.6, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES has a pm25 sensor, checking data...
+Found the data of the station Maywood ES: 58.84, time: Thu May 01 2025 13:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 4 valid data from stations
+IDW prediction value: 145.52
+IDW(p=2) prediction value: 157.12
+Simple average value: 133.62
+Prediction result: {
+  success: true,
+  method: 'idw_enhanced',
+  value: 157.12,
+  stations: '3548 - Elizabeth Learning Ctr, Elizabeth Learning Ctr (3548), Maywood ES (2381), Maywood ES',
+  unit: 'µg/m³',
+  stationCount: 4,
+  note: 'Based on Enhanced Inverse Distance Weighting (IDW²), using data from 4 stations'
+}
+Received prediction request: {
+  latitude: 33.98020299855874,
+  longitude: -118.07684514160098,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.98020299855874, -118.07684514160098), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.98020299855874, longitude=-118.07684514160098, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.98020299855874, -118.07684514160098)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 7 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 2 stations within 5 km
+Found 2 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 2 stations
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 36.927963269487634
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 6.3653890661694845
+Collected 2 valid data from stations
+IDW prediction value: 20.50
+IDW(p=2) prediction value: 19.37
+Simple average value: 21.65
+Prediction result: {
+  success: true,
+  method: 'idw_basic',
+  value: 20.5,
+  stations: 'Pico Rivera, Pico Rivera',
+  unit: 'µg/m³',
+  stationCount: 2,
+  note: 'Based on Inverse Distance Weighting (IDW), using data from 2 stations'
+}
+Received prediction request: {
+  latitude: 33.95737388124371,
+  longitude: -118.09029244705306,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(33.95737388124371, -118.09029244705306), parameter:pm25, radius:10km
+Calling prediction function: latitude=33.95737388124371, longitude=-118.09029244705306, radius=10km
+Start predicting the pm25 value in the area within 10 km of (33.95737388124371, -118.09029244705306)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 7 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 0 stations within 5 km
+No stations within 5 km, cannot predict
+Prediction result: { success: false, error: '5公里范围内没有可用监测站，无法准确预测空气质量' }
+Received prediction request: {
+  latitude: 34.108168130586606,
+  longitude: -118.00377511306885,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(34.108168130586606, -118.00377511306885), parameter:pm25, radius:10km
+Calling prediction function: latitude=34.108168130586606, longitude=-118.00377511306885, radius=10km
+Start predicting the pm25 value in the area within 10 km of (34.108168130586606, -118.00377511306885)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+There are 403 stations in the database
+Found 5 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 0 stations within 5 km
+No stations within 5 km, cannot predict
+Prediction result: { success: false, error: '5公里范围内没有可用监测站，无法准确预测空气质量' }
+Start collecting hourly air quality data...
+Received prediction request: {
+  latitude: 34.049589380107804,
+  longitude: -117.9756226472484,
+  timestamp: '2025-05-01T20:00:00.000Z',
+  parameter: 'pm25',
+  radius: 10
+}
+Using prediction time: 2025-05-01T20:00:00.000Z
+Prediction parameters: coordinates(34.049589380107804, -117.9756226472484), parameter:pm25, radius:10km
+Calling prediction function: latitude=34.049589380107804, longitude=-117.9756226472484, radius=10km
+Start predicting the pm25 value in the area within 10 km of (34.049589380107804, -117.9756226472484)
+Using timestamp: 2025-05-01T20:00:00.000Z
+Original query time: 2025-05-01T20:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T20:00:00.000Z
+Failed to get data for station 1019
+Failed to get data for station 1036
+Failed to get data for station 1247
+There are 403 stations in the database
+Found 2 stations within 10 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 0 stations within 5 km
+No stations within 5 km, cannot predict
+Prediction result: { success: false, error: '5公里范围内没有可用监测站，无法准确预测空气质量' }
+Failed to get data for station 1410
+Failed to get data for station 1575
+Failed to get data for station 1948
+Failed to get data for station 5791
+Received station information request...
+Failed to get data for station 7936
+Failed to get data for station 8236
+Failed to get data for station 8657
+Retrieved 403 stations from database
+Failed to get data for station 8730
+Received station information request...
+Failed to get data for station 8733
+Failed to get data for station 8904
+Retrieved 403 stations from database
+Failed to get data for station 32632
+Failed to get data for station 46221
+Failed to get data for station 290486
+Failed to get data for station 290493
+Failed to get data for station 290494
+Failed to get data for station 290497
+Failed to get data for station 290514
+Failed to get data for station 290516
+Failed to get data for station 290539
+Failed to get data for station 290548
+Failed to get data for station 290556
+Failed to get data for station 290586
+Failed to get data for station 290612
+Failed to get data for station 290613
+Failed to get data for station 290617
+Failed to get data for station 290627
+Failed to get data for station 290631
+Failed to get data for station 290647
+Failed to get data for station 290669
+Failed to get data for station 351827
+Failed to get data for station 352169
+Failed to get data for station 352228
+Failed to get data for station 352243
+Failed to get data for station 923364
+Failed to get data for station 929705
+Failed to get data for station 947152
+Failed to get data for station 947154
+Failed to get data for station 947158
+Failed to get data for station 947159
+Failed to get data for station 947160
+Failed to get data for station 947161
+Failed to get data for station 947162
+Failed to get data for station 947163
+Failed to get data for station 947164
+Failed to get data for station 947165
+Failed to get data for station 947166
+Failed to get data for station 947167
+Failed to get data for station 947168
+Failed to get data for station 947172
+Failed to get data for station 947177
+Failed to get data for station 947180
+Failed to get data for station 947182
+Failed to get data for station 947183
+Failed to get data for station 947185
+Failed to get data for station 947186
+Failed to get data for station 947187
+Failed to get data for station 947188
+Failed to get data for station 947189
+Failed to get data for station 947191
+Failed to get data for station 947192
+Failed to get data for station 947193
+Failed to get data for station 947194
+Failed to get data for station 947196
+Failed to get data for station 947197
+Failed to get data for station 947199
+Failed to get data for station 947201
+Failed to get data for station 947202
+Failed to get data for station 947206
+Failed to get data for station 947207
+Failed to get data for station 947208
+Failed to get data for station 947211
+Failed to get data for station 947212
+Failed to get data for station 947213
+Failed to get data for station 947215
+Failed to get data for station 947216
+Failed to get data for station 947218
+Failed to get data for station 947219
+Failed to get data for station 947220
+Failed to get data for station 947221
+Failed to get data for station 947227
+Failed to get data for station 947228
+Failed to get data for station 947229
+Failed to get data for station 947230
+Failed to get data for station 947233
+Failed to get data for station 947234
+Failed to get data for station 947235
+Failed to get data for station 947236
+Failed to get data for station 947238
+Failed to get data for station 947241
+Failed to get data for station 947242
+Failed to get data for station 947244
+Failed to get data for station 947247
+Failed to get data for station 947249
+Failed to get data for station 947250
+Failed to get data for station 947252
+Failed to get data for station 947254
+Failed to get data for station 947259
+Failed to get data for station 947260
+Failed to get data for station 947262
+Failed to get data for station 947263
+Failed to get data for station 947264
+Failed to get data for station 947266
+Failed to get data for station 947267
+Failed to get data for station 947270
+Failed to get data for station 947271
+Failed to get data for station 947272
+Failed to get data for station 947273
+Failed to get data for station 947275
+Failed to get data for station 947276
+Failed to get data for station 947277
+Failed to get data for station 947278
+Failed to get data for station 947279
+Failed to get data for station 947280
+Failed to get data for station 947281
+Failed to get data for station 947282
+Failed to get data for station 947283
+Failed to get data for station 947285
+Failed to get data for station 947286
+Failed to get data for station 947287
+Failed to get data for station 947288
+Failed to get data for station 947289
+Failed to get data for station 947290
+Failed to get data for station 947294
+Failed to get data for station 947296
+Failed to get data for station 947297
+Failed to get data for station 947298
+Failed to get data for station 947299
+Failed to get data for station 947300
+Failed to get data for station 947303
+Failed to get data for station 947304
+Failed to get data for station 947305
+Failed to get data for station 947306
+Failed to get data for station 947307
+Failed to get data for station 947309
+Failed to get data for station 947310
+Failed to get data for station 947311
+Failed to get data for station 947312
+Failed to get data for station 947313
+Failed to get data for station 947315
+Failed to get data for station 947316
+Failed to get data for station 947317
+Failed to get data for station 947318
+Failed to get data for station 947319
+Failed to get data for station 947321
+Failed to get data for station 947322
+Failed to get data for station 947323
+Failed to get data for station 947324
+Failed to get data for station 947325
+Failed to get data for station 947327
+Failed to get data for station 947328
+Failed to get data for station 947330
+Failed to get data for station 947334
+Failed to get data for station 947335
+Failed to get data for station 947336
+Failed to get data for station 947338
+Failed to get data for station 947339
+Failed to get data for station 947341
+Failed to get data for station 947343
+Failed to get data for station 947345
+Failed to get data for station 947346
+Failed to get data for station 947347
+Failed to get data for station 947348
+Failed to get data for station 947349
+Failed to get data for station 953769
+Failed to get data for station 953824
+Failed to get data for station 1001754
+Failed to get data for station 1008670
+Failed to get data for station 1009028
+Failed to get data for station 1037394
+Failed to get data for station 1037399
+Failed to get data for station 1037495
+Failed to get data for station 1236047
+Failed to get data for station 1285716
+Failed to get data for station 1314366
+Failed to get data for station 1378636
+Failed to get data for station 1533720
+Failed to get data for station 1533911
+Failed to get data for station 1533913
+Failed to get data for station 1533917
+Failed to get data for station 1533920
+Failed to get data for station 1533921
+Failed to get data for station 1716811
+Failed to get data for station 1949202
+Failed to get data for station 1949204
+Failed to get data for station 1949205
+Failed to get data for station 1949206
+Failed to get data for station 2069581
+Failed to get data for station 2812558
+Failed to get data for station 2812560
+Failed to get data for station 2812572
+Failed to get data for station 2812577
+Failed to get data for station 2812581
+Failed to get data for station 2812652
+Failed to get data for station 2812720
+Failed to get data for station 2819489
+Failed to get data for station 2846873
+Failed to get data for station 2861424
+Failed to get data for station 2905670
+Failed to get data for station 2945078
+Failed to get data for station 3066056
+Failed to get data for station 3081004
+Failed to get data for station 3277172
+Failed to get data for station 3279444
+Failed to get data for station 3301739
+Failed to get data for station 3312559
+Failed to get data for station 3390414
+Failed to get data for station 3390415
+Failed to get data for station 3400917
+Failed to get data for station 3400927
+Failed to get data for station 3400944
+Failed to get data for station 3400946
+Failed to get data for station 3400957
+Failed to get data for station 3400958
+Failed to get data for station 3400959
+Failed to get data for station 3400964
+Failed to get data for station 3400965
+Failed to get data for station 3400983
+Failed to get data for station 3400987
+Failed to get data for station 3402588
+Failed to get data for station 3408049
+Failed to get data for station 3408124
+Failed to get data for station 3408435
+Failed to get data for station 3420999
+Failed to get data for station 3443111
+Failed to get data for station 3470923
+Failed to get data for station 3471416
+Failed to get data for station 3492757
+Failed to get data for station 3492758
+Failed to get data for station 3508358
+Failed to get data for station 3532530
+Failed to get data for station 3532531
+Failed to get data for station 3632602
+Failed to get data for station 3862441
+Failed to get data for station 3910090
+Failed to get data for station 3910092
+Failed to get data for station 3930632
+Failed to get data for station 4011243
+Failed to get data for station 4051170
+Failed to get data for station 847
+Failed to get data for station 1035
+Failed to get data for station 1042
+Failed to get data for station 1052
+Failed to get data for station 1200
+Failed to get data for station 1268
+Failed to get data for station 1310
+Failed to get data for station 1326
+Failed to get data for station 1389
+Failed to get data for station 1564
+Failed to get data for station 1585
+Failed to get data for station 1681
+Failed to get data for station 1902
+Failed to get data for station 1980
+Failed to get data for station 1989
+Failed to get data for station 2138
+Failed to get data for station 3935
+Failed to get data for station 5792
+Failed to get data for station 7395
+Failed to get data for station 7759
+Failed to get data for station 8661
+Failed to get data for station 8679
+Failed to get data for station 8699
+Failed to get data for station 8714
+Failed to get data for station 8737
+Failed to get data for station 8838
+Failed to get data for station 8868
+Failed to get data for station 8874
+Failed to get data for station 8875
+Failed to get data for station 8882
+Failed to get data for station 8890
+Failed to get data for station 26707
+Failed to get data for station 26780
+Failed to get data for station 26781
+Failed to get data for station 40279
+Failed to get data for station 53253
+Failed to get data for station 57685
+Failed to get data for station 290509
+Failed to get data for station 290527
+Failed to get data for station 290562
+Failed to get data for station 290579
+Failed to get data for station 290592
+Failed to get data for station 290598
+Failed to get data for station 290619
+Failed to get data for station 290676
+Failed to get data for station 617545
+Failed to get data for station 923365
+Failed to get data for station 947150
+Failed to get data for station 947151
+Failed to get data for station 947153
+Failed to get data for station 947155
+Failed to get data for station 947156
+Failed to get data for station 947157
+Failed to get data for station 947169
+Failed to get data for station 947170
+Failed to get data for station 947171
+Failed to get data for station 947173
+Failed to get data for station 947174
+Failed to get data for station 947175
+Failed to get data for station 947176
+Failed to get data for station 947178
+Failed to get data for station 947184
+Failed to get data for station 947190
+Failed to get data for station 947195
+Failed to get data for station 947198
+Failed to get data for station 947200
+Failed to get data for station 947203
+Failed to get data for station 947204
+Failed to get data for station 947205
+Failed to get data for station 947209
+Failed to get data for station 947210
+Failed to get data for station 947214
+Failed to get data for station 947217
+Failed to get data for station 947222
+Failed to get data for station 947223
+Failed to get data for station 947224
+Failed to get data for station 947225
+Failed to get data for station 947226
+Failed to get data for station 947231
+Failed to get data for station 947232
+Failed to get data for station 947237
+Failed to get data for station 947239
+Failed to get data for station 947240
+Failed to get data for station 947243
+Failed to get data for station 947245
+Failed to get data for station 947246
+Failed to get data for station 947248
+Failed to get data for station 947251
+Failed to get data for station 947253
+Failed to get data for station 947255
+Failed to get data for station 947256
+Failed to get data for station 947257
+Failed to get data for station 947258
+Failed to get data for station 947261
+Failed to get data for station 947265
+Failed to get data for station 947268
+Failed to get data for station 947269
+Failed to get data for station 947274
+Failed to get data for station 947284
+Failed to get data for station 947291
+Failed to get data for station 947292
+Failed to get data for station 947293
+Failed to get data for station 947295
+Failed to get data for station 947301
+Failed to get data for station 947302
+Failed to get data for station 947308
+Failed to get data for station 947314
+Failed to get data for station 947320
+Failed to get data for station 947326
+Failed to get data for station 947329
+Failed to get data for station 947331
+Failed to get data for station 947332
+Failed to get data for station 947333
+Failed to get data for station 947340
+Failed to get data for station 947342
+Failed to get data for station 947344
+Failed to get data for station 1002069
+Failed to get data for station 1373846
+Failed to get data for station 1519816
+Failed to get data for station 1533718
+Failed to get data for station 1533721
+Failed to get data for station 1533915
+Failed to get data for station 1949203
+Failed to get data for station 2092164
+Failed to get data for station 2497134
+Failed to get data for station 2748359
+Failed to get data for station 2812590
+Failed to get data for station 2812608
+Failed to get data for station 2812636
+Failed to get data for station 2812719
+Failed to get data for station 2812805
+Failed to get data for station 2851283
+Failed to get data for station 2923362
+Failed to get data for station 2937894
+Failed to get data for station 3003000
+Failed to get data for station 3020762
+Failed to get data for station 3036174
+Failed to get data for station 3040838
+Failed to get data for station 3066055
+Failed to get data for station 3069192
+Failed to get data for station 3069193
+Failed to get data for station 3069194
+Failed to get data for station 3069195
+Failed to get data for station 3126449
+Failed to get data for station 3150510
+Failed to get data for station 3273175
+Failed to get data for station 3293942
+Failed to get data for station 3363677
+Failed to get data for station 3400910
+Failed to get data for station 3400948
+Failed to get data for station 3400988
+Failed to get data for station 3400995
+Failed to get data for station 3400996
+Failed to get data for station 3400998
+Failed to get data for station 3401001
+Failed to get data for station 3423890
+Failed to get data for station 3581456
+Failed to get data for station 3886370
+Failed to get data for station 3910091
+Failed to get data for station 4011242
+Failed to get data for station 4011288
+Failed to get data for station 4154363
+Hourly data collection completed
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T21:00:00.000Z' }
+查询时间: 2025-05-02T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 291ms
+获取了2821个传感器信息，耗时: 915ms
+获取了1024条小时数据，耗时: 311ms
+原始方法总耗时: 1226ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 699ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1929ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T21:00:00.000Z' }
+查询时间: 2025-05-01T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+获取了403个站点基本信息，耗时: 150ms
+获取了2821个传感器信息，耗时: 737ms
+获取了1024条小时数据，耗时: 242ms
+原始方法总耗时: 979ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 593ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1577ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Received station information request...
+Retrieved 403 stations from database
+Received prediction request: {
+  latitude: 33.91070934323946,
+  longitude: -118.25193974609326,
+  timestamp: '2025-05-01T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-01T21:00:00.000Z
+Prediction parameters: coordinates(33.91070934323946, -118.25193974609326), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.91070934323946, longitude=-118.25193974609326, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.91070934323946, -118.25193974609326)
+Using timestamp: 2025-05-01T21:00:00.000Z
+Original query time: 2025-05-01T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T21:00:00.000Z
+There are 403 stations in the database
+Found 23 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 23 stations within 5 km
+Found 23 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 23 stations
+The station Compton has a pm25 sensor, checking data...
+Found the data of the station Compton: 123.23, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 5857 - 107Th St El has a pm25 sensor, checking data...
+Found the data of the station 5857 - 107Th St El: 76.39, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Central Ave. has a pm25 sensor, checking data...
+Found the data of the station Central Ave.: 285.78, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Imperial Hwy. has a pm25 sensor, checking data...
+Found the data of the station Imperial Hwy.: 116.53, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Weigand Ave. has a pm25 sensor, checking data...
+Found the data of the station Weigand Ave.: 285.12, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Compton ES (3205) has a pm25 sensor, checking data...
+Found the data of the station Compton ES (3205): 268.89, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Weigand ES (7634) has a pm25 sensor, checking data...
+Found the data of the station Weigand ES (7634): 128.32, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Avalon Gardens ES (2247) has a pm25 sensor, checking data...
+Found the data of the station Avalon Gardens ES (2247): 131.69, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Montara Ave ES (6878) has a pm25 sensor, checking data...
+Found the data of the station Montara Ave ES (6878): 28.6, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station ABF4WTTT has a pm25 sensor, checking data...
+Found the data of the station ABF4WTTT: 150.89, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Ambler ES (2089) has a pm25 sensor, checking data...
+Found the data of the station Ambler ES (2089): 61.04, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Amestoy ES (2096) has a pm25 sensor, checking data...
+Found the data of the station Amestoy ES (2096): 138.81, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 135th St ES (5877) has a pm25 sensor, checking data...
+Found the data of the station 135th St ES (5877): 45.26, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 107th St ES (5857) has a pm25 sensor, checking data...
+Found the data of the station 107th St ES (5857): 52.04, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A2P8277T has a pm25 sensor, checking data...
+Found the data of the station A2P8277T: 35.35, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station AXWG6KH3 has a pm25 sensor, checking data...
+Received station information request...
+Found the data of the station AXWG6KH3: 185.08, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 103rd St. has a pm25 sensor, checking data...
+Found the data of the station 103rd St.: 15.5, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A2YG9P7N has a pm25 sensor, checking data...
+Found the data of the station A2YG9P7N: 247.3, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Imperial Hwy. has a pm25 sensor, checking data...
+Found the data of the station Imperial Hwy.: 34.87, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A0VG3NY7 has a pm25 sensor, checking data...
+Found the data of the station A0VG3NY7: 109.72, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A6CW7BPK has a pm25 sensor, checking data...
+Found the data of the station A6CW7BPK: 165.82, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Jordan HS (8721) has a pm25 sensor, checking data...
+Found the data of the station Jordan HS (8721): 173.31, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 122nd St ES (5887) has a pm25 sensor, checking data...
+Found the data of the station 122nd St ES (5887): 197.08, time: Thu May 01 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 23 valid data from stations
+IDW prediction value: 139.00
+IDW(p=2) prediction value: 145.42
+Simple average value: 132.90
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 132.9,
+  stations: 'Compton, 5857 - 107Th St El, Central Ave., Imperial Hwy., Weigand Ave., Compton ES (3205), Weigand ES (7634), Avalon Gardens ES (2247), Montara Ave ES (6878), ABF4WTTT, Ambler ES (2089), Amestoy ES (2096), 135th St ES (5877), 107th St ES (5857), A2P8277T, AXWG6KH3, 103rd St., A2YG9P7N, Imperial Hwy., A0VG3NY7, A6CW7BPK, Jordan HS (8721), 122nd St ES (5887)',
+  unit: 'µg/m³',
+  stationCount: 23,
+  note: 'Based on the simple average of the surrounding stations, using data from 23 stations'
+}
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received prediction request: {
+  latitude: 33.99899071126154,
+  longitude: -118.3425769531247,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(33.99899071126154, -118.3425769531247), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.99899071126154, longitude=-118.3425769531247, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.99899071126154, -118.3425769531247)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+There are 403 stations in the database
+Found 12 stations within 5 km
+Found a station within 1 km: 54th St ES (3781), distance 0.79 km
+Found a sensor: parameter=pm25, unit=µg/m³
+Found an hourly data record: 25.778137240495287 µg/m³, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Prediction result: {
+  success: true,
+  method: 'direct',
+  value: 25.778137240495287,
+  station: '54th St ES (3781)',
+  distance: '0.79',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:00:00.000Z
+}
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T21:00:00.000Z' }
+查询时间: 2025-05-02T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 33.99899071126154,
+  longitude: -118.3425769531247,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(33.99899071126154, -118.3425769531247), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.99899071126154, longitude=-118.3425769531247, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.99899071126154, -118.3425769531247)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+获取了403个站点基本信息，耗时: 292ms
+获取了2821个传感器信息，耗时: 896ms
+There are 403 stations in the database
+Found 12 stations within 5 km
+Found a station within 1 km: 54th St ES (3781), distance 0.79 km
+Found a sensor: parameter=pm25, unit=µg/m³
+Found an hourly data record: 25.778137240495287 µg/m³, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Prediction result: {
+  success: true,
+  method: 'direct',
+  value: 25.778137240495287,
+  station: '54th St ES (3781)',
+  distance: '0.79',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:00:00.000Z
+}
+获取了1024条小时数据，耗时: 310ms
+原始方法总耗时: 1206ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 703ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1914ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-01T21:00:00.000Z' }
+查询时间: 2025-05-01T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 33.99899071126154,
+  longitude: -118.3425769531247,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(33.99899071126154, -118.3425769531247), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.99899071126154, longitude=-118.3425769531247, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.99899071126154, -118.3425769531247)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+获取了403个站点基本信息，耗时: 152ms
+获取了2821个传感器信息，耗时: 691ms
+There are 403 stations in the database
+Found 12 stations within 5 km
+Found a station within 1 km: 54th St ES (3781), distance 0.79 km
+Found a sensor: parameter=pm25, unit=µg/m³
+Found an hourly data record: 229.03 µg/m³, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Prediction result: {
+  success: true,
+  method: 'direct',
+  value: 229.03,
+  station: '54th St ES (3781)',
+  distance: '0.79',
+  unit: 'µg/m³',
+  timestamp: 2025-05-02T21:00:00.000Z
+}
+获取了1024条小时数据，耗时: 420ms
+原始方法总耗时: 1111ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 593ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 2ms
+优化方法总耗时: 1707ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Received prediction request: {
+  latitude: 34.010944365511875,
+  longitude: -118.01985356445265,
+  timestamp: '2025-05-01T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-01T21:00:00.000Z
+Prediction parameters: coordinates(34.010944365511875, -118.01985356445265), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.010944365511875, longitude=-118.01985356445265, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.010944365511875, -118.01985356445265)
+Using timestamp: 2025-05-01T21:00:00.000Z
+Original query time: 2025-05-01T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T21:00:00.000Z
+There are 403 stations in the database
+Found 2 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 2 stations within 5 km
+Found 2 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 2 stations
+The station Pico Rivera has a pm25 sensor, checking data...
+Received prediction request: {
+  latitude: 33.99842144766535,
+  longitude: -118.04663273925718,
+  timestamp: '2025-05-01T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-01T21:00:00.000Z
+Prediction parameters: coordinates(33.99842144766535, -118.04663273925718), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.99842144766535, longitude=-118.04663273925718, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.99842144766535, -118.04663273925718)
+Using timestamp: 2025-05-01T21:00:00.000Z
+Original query time: 2025-05-01T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-01T21:00:00.000Z
+Using the current value of the sensor of the station Pico Rivera: 8.816095637907644
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 12.745739366907785
+Collected 2 valid data from stations
+IDW prediction value: 10.58
+IDW(p=2) prediction value: 10.38
+Simple average value: 10.78
+Prediction result: {
+  success: true,
+  method: 'idw_basic',
+  value: 10.58,
+  stations: 'Pico Rivera, Pico Rivera',
+  unit: 'µg/m³',
+  stationCount: 2,
+  note: 'Based on Inverse Distance Weighting (IDW), using data from 2 stations'
+}
+There are 403 stations in the database
+Found 2 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 2 stations within 5 km
+Found 2 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 2 stations
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 8.816095637907644
+The station Pico Rivera has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 12.745739366907785
+Collected 2 valid data from stations
+IDW prediction value: 10.61
+IDW(p=2) prediction value: 10.44
+Simple average value: 10.78
+Prediction result: {
+  success: true,
+  method: 'idw_basic',
+  value: 10.61,
+  stations: 'Pico Rivera, Pico Rivera',
+  unit: 'µg/m³',
+  stationCount: 2,
+  note: 'Based on Inverse Distance Weighting (IDW), using data from 2 stations'
+}
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received prediction request: {
+  latitude: 34.07353124809575,
+  longitude: -118.17160222167921,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(34.07353124809575, -118.17160222167921), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.07353124809575, longitude=-118.17160222167921, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.07353124809575, -118.17160222167921)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+There are 403 stations in the database
+Found 11 stations within 5 km
+Found a station within 1 km: Sierra Park ES (6753), distance 0.98 km
+Found a sensor: parameter=pm25, unit=µg/m³
+Found an hourly data record: 31.25716459899624 µg/m³, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Prediction result: {
+  success: true,
+  method: 'direct',
+  value: 31.25716459899624,
+  station: 'Sierra Park ES (6753)',
+  distance: '0.98',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:00:00.000Z
+}
+Received prediction request: {
+  latitude: 34.04281254997423,
+  longitude: -118.17091557617127,
+  timestamp: '2025-05-03T21:16:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:16:00.000Z
+Prediction parameters: coordinates(34.04281254997423, -118.17091557617127), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.04281254997423, longitude=-118.17091557617127, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.04281254997423, -118.17091557617127)
+Using timestamp: 2025-05-03T21:16:00.000Z
+Original query time: 2025-05-03T21:16:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+There are 403 stations in the database
+Found 19 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 19 stations within 5 km
+Found 19 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 19 stations
+The station 6685 - Sheridan St El has a pm25 sensor, checking data...
+Found the data of the station 6685 - Sheridan St El: 7.281388030115146, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 23.839795378417755, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 4096 - Gates El has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 25.45080736939557, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 10.120001539317647, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 7.940849901697282, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 21.00613159342665, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 7370 - Utah El has a pm25 sensor, checking data...
+Found the data of the station 7370 - Utah El: 13.074024579890109, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 9.428644758291602, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 9.232351467475581, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 31.25716459899624, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 32.0170386824983, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 27.641388621949954, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A6DR4SLX has a pm25 sensor, checking data...
+Found the data of the station A6DR4SLX: 44.415864667549585, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 5.2154394854272645, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Lorena St ES (4945) has a pm25 sensor, checking data...
+Found the data of the station Lorena St ES (4945): 37.257954857761, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 8.512419393494213, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 33.72282074709142, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 18.21062550954707, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 35.50125964387779, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 19 valid data from stations
+IDW prediction value: 20.32
+IDW(p=2) prediction value: 19.56
+Simple average value: 21.11
+Prediction result: {
+  success: true,
+  method: 'idw_enhanced',
+  value: 19.56,
+  stations: '6685 - Sheridan St El, Sheridan St ES (6685), 4096 - Gates El, 6425 - Rowan El, Rowan ES (6425), Gates ES (4096), 7370 - Utah El, Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), A6DR4SLX, Sheridan St ES (6685), Lorena St ES (4945), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3)',
+  unit: 'µg/m³',
+  stationCount: 19,
+  note: 'Based on Enhanced Inverse Distance Weighting (IDW²), using data from 19 stations'
+}
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T21:00:00.000Z' }
+查询时间: 2025-05-02T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 34.07353124809575,
+  longitude: -118.17160222167921,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(34.07353124809575, -118.17160222167921), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.07353124809575, longitude=-118.17160222167921, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.07353124809575, -118.17160222167921)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+获取了403个站点基本信息，耗时: 156ms
+获取了2821个传感器信息，耗时: 1080ms
+Received prediction request: {
+  latitude: 34.004398525156404,
+  longitude: -118.0143604003895,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.004398525156404, -118.0143604003895), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.004398525156404, longitude=-118.0143604003895, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.004398525156404, -118.0143604003895)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 11 stations within 5 km
+Found a station within 1 km: Sierra Park ES (6753), distance 0.98 km
+Found a sensor: parameter=pm25, unit=µg/m³
+Found an hourly data record: 31.25716459899624 µg/m³, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Prediction result: {
+  success: true,
+  method: 'direct',
+  value: 31.25716459899624,
+  station: 'Sierra Park ES (6753)',
+  distance: '0.98',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:00:00.000Z
+}
+获取了1024条小时数据，耗时: 607ms
+原始方法总耗时: 1688ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+Received prediction request: {
+  latitude: 34.0618708311264,
+  longitude: -118.16885563964695,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.0618708311264, -118.16885563964695), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.0618708311264, longitude=-118.16885563964695, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.0618708311264, -118.16885563964695)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+聚合查询完成，耗时: 687ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 2379ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+There are 403 stations in the database
+Found 18 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 18 stations within 5 km
+Found 18 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 18 stations
+The station 6685 - Sheridan St El has a pm25 sensor, checking data...
+Found the data of the station 6685 - Sheridan St El: 69.85, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 84.18, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 4096 - Gates El has a pm25 sensor, checking data...
+There are 403 stations in the database
+Found 1 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 1 stations within 5 km
+Found 1 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 1 stations
+The station Pico Rivera has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 247.98, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 70.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pico Rivera: 8.816095637907644
+Collected 1 valid data from stations
+Only 1 data point, directly use the value of the point
+Prediction result: {
+  success: true,
+  method: 'single',
+  value: 8.816095637907644,
+  station: 'Pico Rivera',
+  distance: '4.24',
+  unit: 'µg/m³',
+  stationCount: 1
+}
+Found the data of the station Rowan ES (6425): 198.28, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 89.59, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 62.07, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 98.04, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 129.9, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 275.67, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 247.37, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 41.26, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station El Sereno ES (3562) has a pm25 sensor, checking data...
+Found the data of the station El Sereno ES (3562): 299.97, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 194.89, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 228.99, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 13.62, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 20.25, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 18 valid data from stations
+IDW prediction value: 135.97
+IDW(p=2) prediction value: 136.71
+Simple average value: 134.08
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 134.08,
+  stations: '6685 - Sheridan St El, Sheridan St ES (6685), 4096 - Gates El, 6425 - Rowan El, Rowan ES (6425), Gates ES (4096), Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), Sheridan St ES (6685), Sierra Vista ES (6767), El Sereno ES (3562), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3)',
+  unit: 'µg/m³',
+  stationCount: 18,
+  note: 'Based on the simple average of the surrounding stations, using data from 18 stations'
+}
+Received prediction request: {
+  latitude: 33.997567545118926,
+  longitude: -118.17022893066286,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(33.997567545118926, -118.17022893066286), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.997567545118926, longitude=-118.17022893066286, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.997567545118926, -118.17022893066286)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 15 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 15 stations within 5 km
+Found 15 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 15 stations
+The station 3548 - Elizabeth Learning Ctr has a pm25 sensor, checking data...
+Found the data of the station 3548 - Elizabeth Learning Ctr: 238.21, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 70.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 198.28, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Elizabeth Learning Ctr (3548) has a pm25 sensor, checking data...
+Found the data of the station Elizabeth Learning Ctr (3548): 264.49, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES (2381) has a pm25 sensor, checking data...
+Found the data of the station Maywood ES (2381): 246.79, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 129.9, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A6DR4SLX has a pm25 sensor, checking data...
+Found the data of the station A6DR4SLX: 190.63, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station San Antonio ES (4641) has a pm25 sensor, checking data...
+Found the data of the station San Antonio ES (4641): 299.22, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Lorena St ES (4945) has a pm25 sensor, checking data...
+Found the data of the station Lorena St ES (4945): 214.27, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 194.89, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 228.99, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 13.62, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 20.25, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES has a pm25 sensor, checking data...
+Found the data of the station Maywood ES: 86.55, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 15 valid data from stations
+IDW prediction value: 161.38
+IDW(p=2) prediction value: 161.93
+Simple average value: 162.51
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 162.51,
+  stations: '3548 - Elizabeth Learning Ctr, 6425 - Rowan El, Rowan ES (6425), Garfield HS/Monterey CHS (8677), Elizabeth Learning Ctr (3548), Maywood ES (2381), Chandler ES (2959), A6DR4SLX, San Antonio ES (4641), Lorena St ES (4945), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3), Maywood ES',
+  unit: 'µg/m³',
+  stationCount: 15,
+  note: 'Based on the simple average of the surrounding stations, using data from 15 stations'
+}
+Received prediction request: {
+  latitude: 33.96518705573807,
+  longitude: -118.0621961196293,
+  timestamp: '2025-05-02T21:16:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:16:00.000Z
+Prediction parameters: coordinates(33.96518705573807, -118.0621961196293), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.96518705573807, longitude=-118.0621961196293, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.96518705573807, -118.0621961196293)
+Using timestamp: 2025-05-02T21:16:00.000Z
+Original query time: 2025-05-02T21:16:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 2 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 5.05 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 12.745739366907785,
+  station: 'Pico Rivera',
+  distance: '5.05',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:16:24.362Z,
+  note: 'Predicted based on data from the station 5.05 km away'
+}
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received station information request...
+Retrieved 403 stations from database
+Received prediction request: {
+  latitude: 34.05419114366383,
+  longitude: -118.14413640136675,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(34.05419114366383, -118.14413640136675), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.05419114366383, longitude=-118.14413640136675, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.05419114366383, -118.14413640136675)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+There are 403 stations in the database
+Found 13 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 13 stations within 5 km
+Found 13 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 13 stations
+The station Pasadena has a pm25 sensor, checking data...
+Found the data of the station Pasadena: 32.42510804281365, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 10.120001539317647, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 7.940849901697282, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 9.428644758291602, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 9.232351467475581, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 31.25716459899624, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 32.0170386824983, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 27.641388621949954, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 13.179589207110194, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 8.512419393494213, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 33.72282074709142, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 18.21062550954707, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 35.50125964387779, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 13 valid data from stations
+IDW prediction value: 20.38
+IDW(p=2) prediction value: 19.94
+Simple average value: 20.71
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 20.71,
+  stations: 'Pasadena, 6425 - Rowan El, Rowan ES (6425), Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), Sierra Vista ES (6767), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3)',
+  unit: 'µg/m³',
+  stationCount: 13,
+  note: 'Based on the simple average of the surrounding stations, using data from 13 stations'
+}
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T21:00:00.000Z' }
+查询时间: 2025-05-02T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 34.05419114366383,
+  longitude: -118.14413640136675,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(34.05419114366383, -118.14413640136675), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.05419114366383, longitude=-118.14413640136675, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.05419114366383, -118.14413640136675)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+获取了403个站点基本信息，耗时: 277ms
+获取了2821个传感器信息，耗时: 913ms
+There are 403 stations in the database
+Found 13 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 13 stations within 5 km
+Found 13 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 13 stations
+The station Pasadena has a pm25 sensor, checking data...
+获取了1024条小时数据，耗时: 469ms
+原始方法总耗时: 1382ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+Found the data of the station Pasadena: 32.42510804281365, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 10.120001539317647, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 7.940849901697282, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 9.428644758291602, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 9.232351467475581, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 31.25716459899624, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 32.0170386824983, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 27.641388621949954, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 13.179589207110194, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 8.512419393494213, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+聚合查询完成，耗时: 691ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 3ms
+优化方法总耗时: 2076ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 33.72282074709142, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 18.21062550954707, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 35.50125964387779, time: Sat May 03 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 13 valid data from stations
+IDW prediction value: 20.38
+IDW(p=2) prediction value: 19.94
+Simple average value: 20.71
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 20.71,
+  stations: 'Pasadena, 6425 - Rowan El, Rowan ES (6425), Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), Sierra Vista ES (6767), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3)',
+  unit: 'µg/m³',
+  stationCount: 13,
+  note: 'Based on the simple average of the surrounding stations, using data from 13 stations'
+}
+Received prediction request: {
+  latitude: 34.0741000078736,
+  longitude: -118.16061589355431,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.0741000078736, -118.16061589355431), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.0741000078736, longitude=-118.16061589355431, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.0741000078736, -118.16061589355431)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 9 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 9 stations within 5 km
+Found 9 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 9 stations
+The station Pasadena has a pm25 sensor, checking data...
+Using the current value of the sensor of the station Pasadena: 6.4394078752877615
+The station 4096 - Gates El has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 247.98, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 89.59, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 62.07, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 98.04, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 275.67, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 41.26, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station El Sereno ES (3562) has a pm25 sensor, checking data...
+Found the data of the station El Sereno ES (3562): 299.97, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Story Park has a pm25 sensor, checking data...
+Found the data of the station Story Park: 151.88, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 9 valid data from stations
+IDW prediction value: 141.10
+IDW(p=2) prediction value: 133.12
+Simple average value: 141.43
+Prediction result: {
+  success: true,
+  method: 'idw_enhanced',
+  value: 133.12,
+  stations: 'Pasadena, 4096 - Gates El, Gates ES (4096), Harrison ES (4438), Sierra Park ES (6753), Multnomah St ES (5425), Sierra Vista ES (6767), El Sereno ES (3562), Story Park',
+  unit: 'µg/m³',
+  stationCount: 9,
+  note: 'Based on Enhanced Inverse Distance Weighting (IDW²), using data from 9 stations'
+}
+Received prediction request: {
+  latitude: 34.06727463850564,
+  longitude: -118.17297551269465,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.06727463850564, -118.17297551269465), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.06727463850564, longitude=-118.17297551269465, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.06727463850564, -118.17297551269465)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 22 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 22 stations within 5 km
+Found 22 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 22 stations
+The station Los Angeles - N. Mai has a pm25 sensor, checking data...
+Found the data of the station Los Angeles - N. Mai: 180.19, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6685 - Sheridan St El has a pm25 sensor, checking data...
+Found the data of the station 6685 - Sheridan St El: 69.85, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 84.18, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 4096 - Gates El has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 247.98, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 70.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 198.28, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 89.59, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 62.07, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 98.04, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 129.9, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 275.67, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 247.37, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 41.26, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station El Sereno ES (3562) has a pm25 sensor, checking data...
+Found the data of the station El Sereno ES (3562): 299.97, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Arroyo Seco Museum Science Magnet SPAN (4322) has a pm25 sensor, checking data...
+Found the data of the station Arroyo Seco Museum Science Magnet SPAN (4322): 203.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A424LYXV has a pm25 sensor, checking data...
+Found the data of the station A424LYXV: 290.5, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 194.89, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 228.99, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 13.62, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 20.25, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station N. Main Street Collocation has a pm25 sensor, checking data...
+Found the data of the station N. Main Street Collocation: 226.69, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 22 valid data from stations
+IDW prediction value: 151.95
+IDW(p=2) prediction value: 153.54
+Simple average value: 150.65
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 150.65,
+  stations: 'Los Angeles - N. Mai, 6685 - Sheridan St El, Sheridan St ES (6685), 4096 - Gates El, 6425 - Rowan El, Rowan ES (6425), Gates ES (4096), Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), Sheridan St ES (6685), Sierra Vista ES (6767), El Sereno ES (3562), Arroyo Seco Museum Science Magnet SPAN (4322), A424LYXV, Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3), N. Main Street Collocation',
+  unit: 'µg/m³',
+  stationCount: 22,
+  note: 'Based on the simple average of the surrounding stations, using data from 22 stations'
+}
+Received prediction request: {
+  latitude: 34.06443057231489,
+  longitude: -118.17846867675733,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.06443057231489, -118.17846867675733), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.06443057231489, longitude=-118.17846867675733, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.06443057231489, -118.17846867675733)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 26 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 26 stations within 5 km
+Found 26 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 26 stations
+The station Los Angeles - N. Mai has a pm25 sensor, checking data...
+Found the data of the station Los Angeles - N. Mai: 180.19, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6685 - Sheridan St El has a pm25 sensor, checking data...
+Found the data of the station 6685 - Sheridan St El: 69.85, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 84.18, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 4096 - Gates El has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 247.98, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 70.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 198.28, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 89.59, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 7370 - Utah El has a pm25 sensor, checking data...
+Found the data of the station 7370 - Utah El: 88.88, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 62.07, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 98.04, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 129.9, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 275.67, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A6DR4SLX has a pm25 sensor, checking data...
+Found the data of the station A6DR4SLX: 190.63, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 247.37, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 41.26, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station El Sereno ES (3562) has a pm25 sensor, checking data...
+Found the data of the station El Sereno ES (3562): 299.97, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Arroyo Seco Museum Science Magnet SPAN (4322) has a pm25 sensor, checking data...
+Found the data of the station Arroyo Seco Museum Science Magnet SPAN (4322): 203.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A424LYXV has a pm25 sensor, checking data...
+Found the data of the station A424LYXV: 290.5, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Lorena St ES (4945) has a pm25 sensor, checking data...
+Found the data of the station Lorena St ES (4945): 214.27, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Utah ES (7370) has a pm25 sensor, checking data...
+Found the data of the station Utah ES (7370): 14.5, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 194.89, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 228.99, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 13.62, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 20.25, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station N. Main Street Collocation has a pm25 sensor, checking data...
+Found the data of the station N. Main Street Collocation: 226.69, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 26 valid data from stations
+IDW prediction value: 149.80
+IDW(p=2) prediction value: 154.23
+Simple average value: 147.03
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 147.03,
+  stations: 'Los Angeles - N. Mai, 6685 - Sheridan St El, Sheridan St ES (6685), 4096 - Gates El, 6425 - Rowan El, Rowan ES (6425), Gates ES (4096), 7370 - Utah El, Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), A6DR4SLX, Sheridan St ES (6685), Sierra Vista ES (6767), El Sereno ES (3562), Arroyo Seco Museum Science Magnet SPAN (4322), A424LYXV, Lorena St ES (4945), Utah ES (7370), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3), N. Main Street Collocation',
+  unit: 'µg/m³',
+  stationCount: 26,
+  note: 'Based on the simple average of the surrounding stations, using data from 26 stations'
+}
+Received prediction request: {
+  latitude: 34.05874215356354,
+  longitude: -118.17846867675733,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.05874215356354, -118.17846867675733), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.05874215356354, longitude=-118.17846867675733, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.05874215356354, -118.17846867675733)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 25 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 25 stations within 5 km
+Found 25 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 25 stations
+The station Los Angeles - N. Mai has a pm25 sensor, checking data...
+Found the data of the station Los Angeles - N. Mai: 180.19, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6685 - Sheridan St El has a pm25 sensor, checking data...
+Found the data of the station 6685 - Sheridan St El: 69.85, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 84.18, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 4096 - Gates El has a pm25 sensor, checking data...
+Found the data of the station 4096 - Gates El: 247.98, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 6425 - Rowan El has a pm25 sensor, checking data...
+Found the data of the station 6425 - Rowan El: 70.46, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Rowan ES (6425) has a pm25 sensor, checking data...
+Found the data of the station Rowan ES (6425): 198.28, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Gates ES (4096) has a pm25 sensor, checking data...
+Found the data of the station Gates ES (4096): 89.59, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station 7370 - Utah El has a pm25 sensor, checking data...
+Found the data of the station 7370 - Utah El: 88.88, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Harrison ES (4438) has a pm25 sensor, checking data...
+Found the data of the station Harrison ES (4438): 62.07, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Park ES (6753) has a pm25 sensor, checking data...
+Found the data of the station Sierra Park ES (6753): 98.04, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Chandler ES (2959) has a pm25 sensor, checking data...
+Found the data of the station Chandler ES (2959): 129.9, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Multnomah St ES (5425) has a pm25 sensor, checking data...
+Found the data of the station Multnomah St ES (5425): 275.67, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A6DR4SLX has a pm25 sensor, checking data...
+Found the data of the station A6DR4SLX: 190.63, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sheridan St ES (6685) has a pm25 sensor, checking data...
+Found the data of the station Sheridan St ES (6685): 247.37, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Sierra Vista ES (6767) has a pm25 sensor, checking data...
+Found the data of the station Sierra Vista ES (6767): 41.26, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station El Sereno ES (3562) has a pm25 sensor, checking data...
+Found the data of the station El Sereno ES (3562): 299.97, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station A424LYXV has a pm25 sensor, checking data...
+Found the data of the station A424LYXV: 290.5, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Lorena St ES (4945) has a pm25 sensor, checking data...
+Found the data of the station Lorena St ES (4945): 214.27, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Utah ES (7370) has a pm25 sensor, checking data...
+Found the data of the station Utah ES (7370): 14.5, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DCBSH3824 → AX9T9WLM) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DCBSH3824 → AX9T9WLM): 194.89, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DREKF2031 → A9J7X3VX) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DREKF2031 → A9J7X3VX): 228.99, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DFYXJ3461 → A64CNGJG) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DFYXJ3461 → A64CNGJG): 13.62, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Unnamed (DHZCG3067 → AHYTLTN3) has a pm25 sensor, checking data...
+Found the data of the station Unnamed (DHZCG3067 → AHYTLTN3): 20.25, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station N. Main Street Collocation has a pm25 sensor, checking data...
+Found the data of the station N. Main Street Collocation: 226.69, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 25 valid data from stations
+IDW prediction value: 142.31
+IDW(p=2) prediction value: 134.81
+Simple average value: 144.77
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 144.77,
+  stations: 'Los Angeles - N. Mai, 6685 - Sheridan St El, Sheridan St ES (6685), 4096 - Gates El, 6425 - Rowan El, Rowan ES (6425), Gates ES (4096), 7370 - Utah El, Garfield HS/Monterey CHS (8677), Harrison ES (4438), Sierra Park ES (6753), Chandler ES (2959), Multnomah St ES (5425), A6DR4SLX, Sheridan St ES (6685), Sierra Vista ES (6767), El Sereno ES (3562), A424LYXV, Lorena St ES (4945), Utah ES (7370), Unnamed (DCBSH3824 → AX9T9WLM), Unnamed (DREKF2031 → A9J7X3VX), Unnamed (DFYXJ3461 → A64CNGJG), Unnamed (DHZCG3067 → AHYTLTN3), N. Main Street Collocation',
+  unit: 'µg/m³',
+  stationCount: 25,
+  note: 'Based on the simple average of the surrounding stations, using data from 25 stations'
+}
+Received prediction request: {
+  latitude: 33.99899071126154,
+  longitude: -118.13726994628863,
+  timestamp: '2025-05-02T21:56:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:56:00.000Z
+Prediction parameters: coordinates(33.99899071126154, -118.13726994628863), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.99899071126154, longitude=-118.13726994628863, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.99899071126154, -118.13726994628863)
+Using timestamp: 2025-05-02T21:56:00.000Z
+Original query time: 2025-05-02T21:56:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 3 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 3 stations within 5 km
+Found 3 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 3 stations
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES (2381) has a pm25 sensor, checking data...
+Found the data of the station Maywood ES (2381): 246.79, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES has a pm25 sensor, checking data...
+Found the data of the station Maywood ES: 86.55, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 3 valid data from stations
+IDW prediction value: 121.23
+IDW(p=2) prediction value: 117.50
+Simple average value: 124.83
+Prediction result: {
+  success: true,
+  method: 'idw_enhanced',
+  value: 117.5,
+  stations: 'Garfield HS/Monterey CHS (8677), Maywood ES (2381), Maywood ES',
+  unit: 'µg/m³',
+  stationCount: 3,
+  note: 'Based on Enhanced Inverse Distance Weighting (IDW²), using data from 3 stations'
+}
+Received prediction request: {
+  latitude: 33.94745691012953,
+  longitude: -118.06654545898422,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(33.94745691012953, -118.06654545898422), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.94745691012953, longitude=-118.06654545898422, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.94745691012953, -118.06654545898422)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 2 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 6.99 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 14.215003772385044,
+  station: 'Pico Rivera',
+  distance: '6.99',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:57:22.011Z,
+  note: 'Predicted based on data from the station 6.99 km away'
+}
+Received prediction request: {
+  latitude: 33.92068118055123,
+  longitude: -118.05212590332049,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(33.92068118055123, -118.05212590332049), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.92068118055123, longitude=-118.05212590332049, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.92068118055123, -118.05212590332049)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 2 stations within 10 km, using the nearest station
+Using the nearest station La Habra, distance 9.20 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 14.911392764146054,
+  station: 'La Habra',
+  distance: '9.20',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:57:23.558Z,
+  note: 'Predicted based on data from the station 9.20 km away'
+}
+Received prediction request: {
+  latitude: 33.94346956911731,
+  longitude: -118.07478520507823,
+  timestamp: '2025-05-02T21:56:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:56:00.000Z
+Prediction parameters: coordinates(33.94346956911731, -118.07478520507823), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.94346956911731, longitude=-118.07478520507823, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.94346956911731, -118.07478520507823)
+Using timestamp: 2025-05-02T21:56:00.000Z
+Original query time: 2025-05-02T21:56:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 2 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 7.45 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 14.215003772385044,
+  station: 'Pico Rivera',
+  distance: '7.45',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:57:27.116Z,
+  note: 'Predicted based on data from the station 7.45 km away'
+}
+Received prediction request: {
+  latitude: 33.92267540797974,
+  longitude: -118.04594609374976,
+  timestamp: '2025-05-02T21:56:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:56:00.000Z
+Prediction parameters: coordinates(33.92267540797974, -118.04594609374976), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.92267540797974, longitude=-118.04594609374976, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.92267540797974, -118.04594609374976)
+Using timestamp: 2025-05-02T21:56:00.000Z
+Original query time: 2025-05-02T21:56:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 3 stations within 10 km, using the nearest station
+Using the nearest station La Habra, distance 8.62 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 14.911392764146054,
+  station: 'La Habra',
+  distance: '8.62',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T21:57:31.271Z,
+  note: 'Predicted based on data from the station 8.62 km away'
+}
+Received prediction request: {
+  latitude: 33.994151849101485,
+  longitude: -118.14619633788985,
+  timestamp: '2025-05-02T21:56:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:56:00.000Z
+Prediction parameters: coordinates(33.994151849101485, -118.14619633788985), parameter:pm25, radius:5km
+Calling prediction function: latitude=33.994151849101485, longitude=-118.14619633788985, radius=5km
+Start predicting the pm25 value in the area within 5 km of (33.994151849101485, -118.14619633788985)
+Using timestamp: 2025-05-02T21:56:00.000Z
+Original query time: 2025-05-02T21:56:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 5 stations within 5 km
+No station within 1 km, checking the stations within 5 km
+After filtering, found 5 stations within 5 km
+Found 5 stations within 5 km, using these stations for calculation
+Trying to collect data from all stations for prediction, there are 5 stations
+The station 3548 - Elizabeth Learning Ctr has a pm25 sensor, checking data...
+Found the data of the station 3548 - Elizabeth Learning Ctr: 238.21, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Garfield HS/Monterey CHS (8677) has a pm25 sensor, checking data...
+Found the data of the station Garfield HS/Monterey CHS (8677): 41.16, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Elizabeth Learning Ctr (3548) has a pm25 sensor, checking data...
+Found the data of the station Elizabeth Learning Ctr (3548): 264.49, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES (2381) has a pm25 sensor, checking data...
+Found the data of the station Maywood ES (2381): 246.79, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+The station Maywood ES has a pm25 sensor, checking data...
+Found the data of the station Maywood ES: 86.55, time: Fri May 02 2025 14:00:00 GMT-0700 (北美太平洋夏令时间)
+Collected 5 valid data from stations
+IDW prediction value: 169.87
+IDW(p=2) prediction value: 165.16
+Simple average value: 175.44
+Prediction result: {
+  success: true,
+  method: 'simple_avg',
+  value: 175.44,
+  stations: '3548 - Elizabeth Learning Ctr, Garfield HS/Monterey CHS (8677), Elizabeth Learning Ctr (3548), Maywood ES (2381), Maywood ES',
+  unit: 'µg/m³',
+  stationCount: 5,
+  note: 'Based on the simple average of the surrounding stations, using data from 5 stations'
+}
+Start collecting hourly air quality data...
+Failed to get data for station 1019
+Failed to get data for station 1036
+Failed to get data for station 1247
+Failed to get data for station 1410
+Failed to get data for station 1575
+Failed to get data for station 1948
+Failed to get data for station 5791
+Failed to get data for station 7936
+Failed to get data for station 8236
+Failed to get data for station 8657
+Failed to get data for station 8730
+Failed to get data for station 8733
+Failed to get data for station 8904
+Failed to get data for station 32632
+Failed to get data for station 46221
+Failed to get data for station 290486
+Failed to get data for station 290493
+Failed to get data for station 290494
+Failed to get data for station 290497
+Failed to get data for station 290514
+Failed to get data for station 290516
+Failed to get data for station 290539
+Failed to get data for station 290548
+Failed to get data for station 290556
+Failed to get data for station 290586
+Failed to get data for station 290612
+Failed to get data for station 290613
+Failed to get data for station 290617
+Failed to get data for station 290627
+Failed to get data for station 290631
+Failed to get data for station 290647
+Failed to get data for station 290669
+Failed to get data for station 351827
+Failed to get data for station 352169
+Failed to get data for station 352228
+Failed to get data for station 352243
+Failed to get data for station 923364
+Failed to get data for station 929705
+Failed to get data for station 947152
+Failed to get data for station 947154
+Failed to get data for station 947158
+Failed to get data for station 947159
+Failed to get data for station 947160
+Failed to get data for station 947161
+Failed to get data for station 947162
+Failed to get data for station 947163
+Failed to get data for station 947164
+Failed to get data for station 947165
+Failed to get data for station 947166
+Failed to get data for station 947167
+Failed to get data for station 947168
+Failed to get data for station 947172
+Failed to get data for station 947177
+Failed to get data for station 947180
+Failed to get data for station 947182
+Failed to get data for station 947183
+Failed to get data for station 947185
+Failed to get data for station 947186
+Failed to get data for station 947187
+Failed to get data for station 947188
+Failed to get data for station 947189
+Failed to get data for station 947191
+Failed to get data for station 947192
+Failed to get data for station 947193
+Failed to get data for station 947194
+Failed to get data for station 947196
+Failed to get data for station 947197
+Failed to get data for station 947199
+Failed to get data for station 947201
+Failed to get data for station 947202
+Failed to get data for station 947206
+Failed to get data for station 947207
+Failed to get data for station 947208
+Failed to get data for station 947211
+Failed to get data for station 947212
+Failed to get data for station 947213
+Failed to get data for station 947215
+Failed to get data for station 947216
+Failed to get data for station 947218
+Failed to get data for station 947219
+Failed to get data for station 947220
+Failed to get data for station 947221
+Failed to get data for station 947227
+Failed to get data for station 947228
+Failed to get data for station 947229
+Failed to get data for station 947230
+Failed to get data for station 947233
+Failed to get data for station 947234
+Failed to get data for station 947235
+Failed to get data for station 947236
+Failed to get data for station 947238
+Failed to get data for station 947241
+Failed to get data for station 947242
+Failed to get data for station 947244
+Failed to get data for station 947247
+Failed to get data for station 947249
+Failed to get data for station 947250
+Failed to get data for station 947252
+Failed to get data for station 947254
+Failed to get data for station 947259
+Failed to get data for station 947260
+Failed to get data for station 947262
+Failed to get data for station 947263
+Failed to get data for station 947264
+Failed to get data for station 947266
+Failed to get data for station 947267
+Failed to get data for station 947270
+Failed to get data for station 947271
+Failed to get data for station 947272
+Failed to get data for station 947273
+Failed to get data for station 947275
+Failed to get data for station 947276
+Failed to get data for station 947277
+Failed to get data for station 947278
+Failed to get data for station 947279
+Failed to get data for station 947280
+Failed to get data for station 947281
+Failed to get data for station 947282
+Failed to get data for station 947283
+Failed to get data for station 947285
+Failed to get data for station 947286
+Failed to get data for station 947287
+Failed to get data for station 947288
+Failed to get data for station 947289
+Failed to get data for station 947290
+Failed to get data for station 947294
+Failed to get data for station 947296
+Failed to get data for station 947297
+Failed to get data for station 947298
+Failed to get data for station 947299
+Failed to get data for station 947300
+Failed to get data for station 947303
+Failed to get data for station 947304
+Failed to get data for station 947305
+Failed to get data for station 947306
+Failed to get data for station 947307
+Failed to get data for station 947309
+Failed to get data for station 947310
+Failed to get data for station 947311
+Failed to get data for station 947312
+Failed to get data for station 947313
+Failed to get data for station 947315
+Failed to get data for station 947316
+Failed to get data for station 947317
+Failed to get data for station 947318
+Failed to get data for station 947319
+Failed to get data for station 947321
+Failed to get data for station 947322
+Failed to get data for station 947323
+Failed to get data for station 947324
+Failed to get data for station 947325
+Failed to get data for station 947327
+Failed to get data for station 947328
+Failed to get data for station 947330
+Failed to get data for station 947334
+Failed to get data for station 947335
+Failed to get data for station 947336
+Failed to get data for station 947338
+Failed to get data for station 947339
+Failed to get data for station 947341
+Failed to get data for station 947343
+Failed to get data for station 947345
+Failed to get data for station 947346
+Failed to get data for station 947347
+Failed to get data for station 947348
+Failed to get data for station 947349
+Failed to get data for station 953769
+Failed to get data for station 953824
+Failed to get data for station 1001754
+Failed to get data for station 1008670
+Failed to get data for station 1009028
+Failed to get data for station 1037394
+Failed to get data for station 1037399
+Failed to get data for station 1037495
+Failed to get data for station 1236047
+Failed to get data for station 1285716
+Failed to get data for station 1314366
+Failed to get data for station 1378636
+Failed to get data for station 1533720
+Failed to get data for station 1533911
+Failed to get data for station 1533913
+Failed to get data for station 1533917
+Failed to get data for station 1533920
+Failed to get data for station 1533921
+Failed to get data for station 1716811
+Failed to get data for station 1949202
+Failed to get data for station 1949204
+Failed to get data for station 1949205
+Failed to get data for station 1949206
+Failed to get data for station 2069581
+Failed to get data for station 2812558
+Failed to get data for station 2812560
+Failed to get data for station 2812572
+Failed to get data for station 2812577
+Failed to get data for station 2812581
+Failed to get data for station 2812652
+Failed to get data for station 2812720
+Failed to get data for station 2819489
+Failed to get data for station 2846873
+Failed to get data for station 2861424
+Failed to get data for station 2905670
+Failed to get data for station 2945078
+Failed to get data for station 3066056
+Failed to get data for station 3081004
+Failed to get data for station 3277172
+Failed to get data for station 3279444
+Failed to get data for station 3301739
+Failed to get data for station 3312559
+Failed to get data for station 3390414
+Failed to get data for station 3390415
+Failed to get data for station 3400917
+Failed to get data for station 3400927
+Failed to get data for station 3400944
+Failed to get data for station 3400946
+Failed to get data for station 3400957
+Failed to get data for station 3400958
+Failed to get data for station 3400959
+Failed to get data for station 3400964
+Failed to get data for station 3400965
+Failed to get data for station 3400983
+Failed to get data for station 3400987
+Failed to get data for station 3402588
+Failed to get data for station 3408049
+Failed to get data for station 3408124
+Failed to get data for station 3408435
+Failed to get data for station 3420999
+Failed to get data for station 3443111
+Failed to get data for station 3470923
+Failed to get data for station 3471416
+Failed to get data for station 3492757
+Failed to get data for station 3492758
+Failed to get data for station 3508358
+Failed to get data for station 3532530
+Failed to get data for station 3532531
+Failed to get data for station 3632602
+Failed to get data for station 3862441
+Failed to get data for station 3910090
+Failed to get data for station 3910092
+Failed to get data for station 3930632
+Failed to get data for station 4011243
+Failed to get data for station 4051170
+Failed to get data for station 847
+Failed to get data for station 1035
+Failed to get data for station 1042
+Failed to get data for station 1052
+Failed to get data for station 1200
+Failed to get data for station 1268
+Failed to get data for station 1310
+Failed to get data for station 1326
+Failed to get data for station 1389
+Failed to get data for station 1564
+Failed to get data for station 1585
+Failed to get data for station 1681
+Failed to get data for station 1902
+Failed to get data for station 1980
+Failed to get data for station 1989
+Failed to get data for station 2138
+Failed to get data for station 3935
+Failed to get data for station 5792
+Failed to get data for station 7395
+Failed to get data for station 7759
+Failed to get data for station 8661
+Failed to get data for station 8679
+Failed to get data for station 8699
+Failed to get data for station 8714
+Failed to get data for station 8737
+Failed to get data for station 8838
+Failed to get data for station 8868
+Failed to get data for station 8874
+Failed to get data for station 8875
+Failed to get data for station 8882
+Failed to get data for station 8890
+Failed to get data for station 26707
+Failed to get data for station 26780
+Failed to get data for station 26781
+Failed to get data for station 40279
+Failed to get data for station 53253
+Failed to get data for station 57685
+Failed to get data for station 290509
+Failed to get data for station 290527
+Failed to get data for station 290562
+Failed to get data for station 290579
+Failed to get data for station 290592
+Failed to get data for station 290598
+Failed to get data for station 290619
+Failed to get data for station 290676
+Failed to get data for station 617545
+Failed to get data for station 923365
+Failed to get data for station 947150
+Failed to get data for station 947151
+Failed to get data for station 947153
+Failed to get data for station 947155
+Failed to get data for station 947156
+Failed to get data for station 947157
+Failed to get data for station 947169
+Failed to get data for station 947170
+Failed to get data for station 947171
+Failed to get data for station 947173
+Failed to get data for station 947174
+Failed to get data for station 947175
+Failed to get data for station 947176
+Failed to get data for station 947178
+Failed to get data for station 947184
+Failed to get data for station 947190
+Failed to get data for station 947195
+Failed to get data for station 947198
+Failed to get data for station 947200
+Failed to get data for station 947203
+Failed to get data for station 947204
+Failed to get data for station 947205
+Failed to get data for station 947209
+Failed to get data for station 947210
+Failed to get data for station 947214
+Failed to get data for station 947217
+Failed to get data for station 947222
+Failed to get data for station 947223
+Failed to get data for station 947224
+Failed to get data for station 947225
+Failed to get data for station 947226
+Failed to get data for station 947231
+Failed to get data for station 947232
+Failed to get data for station 947237
+Failed to get data for station 947239
+Failed to get data for station 947240
+Failed to get data for station 947243
+Failed to get data for station 947245
+Failed to get data for station 947246
+Failed to get data for station 947248
+Failed to get data for station 947251
+Failed to get data for station 947253
+Failed to get data for station 947255
+Failed to get data for station 947256
+Failed to get data for station 947257
+Failed to get data for station 947258
+Failed to get data for station 947261
+Failed to get data for station 947265
+Failed to get data for station 947268
+Failed to get data for station 947269
+Failed to get data for station 947274
+Failed to get data for station 947284
+Failed to get data for station 947291
+Failed to get data for station 947292
+Failed to get data for station 947293
+Failed to get data for station 947295
+Failed to get data for station 947301
+Failed to get data for station 947302
+Failed to get data for station 947308
+Failed to get data for station 947314
+Failed to get data for station 947320
+Failed to get data for station 947326
+Failed to get data for station 947329
+Failed to get data for station 947331
+Failed to get data for station 947332
+Failed to get data for station 947333
+Failed to get data for station 947340
+Failed to get data for station 947342
+Failed to get data for station 947344
+Failed to get data for station 1002069
+Failed to get data for station 1373846
+Failed to get data for station 1519816
+Failed to get data for station 1533718
+Failed to get data for station 1533721
+Failed to get data for station 1533915
+Failed to get data for station 1949203
+Failed to get data for station 2092164
+Failed to get data for station 2497134
+Failed to get data for station 2748359
+Failed to get data for station 2812590
+Failed to get data for station 2812608
+Failed to get data for station 2812636
+Failed to get data for station 2812719
+Failed to get data for station 2812805
+Failed to get data for station 2851283
+Failed to get data for station 2923362
+Failed to get data for station 2937894
+Failed to get data for station 3003000
+Failed to get data for station 3020762
+Failed to get data for station 3036174
+Failed to get data for station 3040838
+Failed to get data for station 3066055
+Failed to get data for station 3069192
+Failed to get data for station 3069193
+Failed to get data for station 3069194
+Failed to get data for station 3069195
+Failed to get data for station 3126449
+Failed to get data for station 3150510
+Failed to get data for station 3273175
+Failed to get data for station 3293942
+Failed to get data for station 3363677
+Failed to get data for station 3400910
+Failed to get data for station 3400948
+Failed to get data for station 3400988
+Failed to get data for station 3400995
+Failed to get data for station 3400996
+Failed to get data for station 3400998
+Failed to get data for station 3401001
+Failed to get data for station 3423890
+Failed to get data for station 3581456
+Failed to get data for station 3886370
+Failed to get data for station 3910091
+Failed to get data for station 4011242
+Failed to get data for station 4011288
+Failed to get data for station 4154363
+Hourly data collection completed
+Received prediction request: {
+  latitude: 34.06040196075624,
+  longitude: -118.05624561308846,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.06040196075624, -118.05624561308846), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.06040196075624, longitude=-118.05624561308846, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.06040196075624, -118.05624561308846)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 6 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 5.27 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 29.88473976616838,
+  station: 'Pico Rivera',
+  distance: '5.27',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T22:04:04.315Z,
+  note: 'Predicted based on data from the station 5.27 km away'
+}
+接收到时间查询站点数据请求: { timestamp: '2025-05-03T21:00:00.000Z' }
+查询时间: 2025-05-03T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 34.06040196075624,
+  longitude: -118.05624561308846,
+  timestamp: '2025-05-02T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-02T21:00:00.000Z
+Prediction parameters: coordinates(34.06040196075624, -118.05624561308846), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.06040196075624, longitude=-118.05624561308846, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.06040196075624, -118.05624561308846)
+Using timestamp: 2025-05-02T21:00:00.000Z
+Original query time: 2025-05-02T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-02T21:00:00.000Z
+获取了403个站点基本信息，耗时: 279ms
+获取了2821个传感器信息，耗时: 898ms
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 6 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 5.27 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 29.88473976616838,
+  station: 'Pico Rivera',
+  distance: '5.27',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T22:04:07.727Z,
+  note: 'Predicted based on data from the station 5.27 km away'
+}
+获取了2862条小时数据，耗时: 590ms
+原始方法总耗时: 1488ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 1018ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 2ms
+优化方法总耗时: 2508ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
+接收到时间查询站点数据请求: { timestamp: '2025-05-02T21:00:00.000Z' }
+查询时间: 2025-05-02T21:00:00.000Z
+========== 性能测试开始 ==========
+--- 原始多次查询方法性能测试 ---
+Received prediction request: {
+  latitude: 34.06040196075624,
+  longitude: -118.05624561308846,
+  timestamp: '2025-05-03T21:00:00.000Z',
+  parameter: 'pm25',
+  radius: 5
+}
+Using prediction time: 2025-05-03T21:00:00.000Z
+Prediction parameters: coordinates(34.06040196075624, -118.05624561308846), parameter:pm25, radius:5km
+Calling prediction function: latitude=34.06040196075624, longitude=-118.05624561308846, radius=5km
+Start predicting the pm25 value in the area within 5 km of (34.06040196075624, -118.05624561308846)
+Using timestamp: 2025-05-03T21:00:00.000Z
+Original query time: 2025-05-03T21:00:00.000Z
+Rounded down to the nearest hour: 2025-05-03T21:00:00.000Z
+获取了403个站点基本信息，耗时: 292ms
+获取了2821个传感器信息，耗时: 936ms
+There are 403 stations in the database
+Found 0 stations within 5 km
+No stations found, expanding to 10 km and trying again
+Found 6 stations within 10 km, using the nearest station
+Using the nearest station Pico Rivera, distance 5.27 km
+Prediction result: {
+  success: true,
+  method: 'nearest',
+  value: 29.88473976616838,
+  station: 'Pico Rivera',
+  distance: '5.27',
+  unit: 'µg/m³',
+  timestamp: 2025-05-03T22:04:22.252Z,
+  note: 'Predicted based on data from the station 5.27 km away'
+}
+获取了1024条小时数据，耗时: 303ms
+原始方法总耗时: 1239ms
+--- 原始方法测试结束 ---
+--- 优化的聚合查询方法测试 ---
+开始执行高效聚合查询...
+聚合查询完成，耗时: 687ms
+获取到403个站点的数据
+数据转换处理完成, 耗时: 4ms
+优化方法总耗时: 1930ms
+--- 优化方法测试结束 ---
+========== 性能测试结束 ==========
