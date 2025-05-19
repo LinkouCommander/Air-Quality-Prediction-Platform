@@ -6,12 +6,21 @@ An ML-based air quality prediction system built with React frontend, Node.js bac
 ## Repository Structure
 ```
 .
-├── frontend/           # React frontend application
+├── frontend/          # React frontend application
+	├── src/           # css and js files
+		├── ...        
+	├── public		   # images, icon, etc.
+		├── ...
+	├── .env		   # environment variables, e.g. API keys
 ├── backend/           # Node.js/Express backend server
+	├── services/      # data collection and prediction
+		├── ...
+	├── models/		   # database related
+		├── ...
 ├── air-lambda/        # AWS Lambda functions
 ├── terraform/         # Infrastructure as Code
 ├── manifest.md        # Project manifest file
-└── README.md         # This file
+└── README.md          # This file
 ```
 
 ## Technical Requirements
@@ -163,15 +172,3 @@ To ensure system reliability and maintainability, the following testing implemen
 2. Verify MongoDB connection
 3. Confirm API key validity
 4. Check Lambda function logs
-
-## Contributing
-1. Fork repository
-2. Create feature branch
-3. Commit changes
-4. Submit Pull Request
-
-## License
-MIT License
-
-## Contact
-[Your Contact Information]
